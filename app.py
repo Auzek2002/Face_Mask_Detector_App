@@ -5,7 +5,7 @@ import numpy as np
 
 st.set_page_config(
     page_title="Face Mask Detector",
-    page_icon="C:\\Users\\User\\Desktop\\Face_Mask_Detector\\Icon\\Fav_icon_Mask_Detector.png",
+    page_icon="Icon/Fav_icon_Mask_Detector.png",
     layout="wide",
 )
 
@@ -17,7 +17,7 @@ st.write('##### This App can detect Face Masks with 94% Accuracy.')
 st.sidebar.write("""## Please upload an Image""")
 
 def load_model():
-    model_path = 'C:\\Users\\User\\Desktop\\Face_Mask_Detector\\Face_Mask_Detector_tf_2.16.1\\content\\Face_Mask_Detector_tf_2.16.1'
+    model_path = 'Face_Mask_Detector_tf_2.16.1/content/Face_Mask_Detector_tf_2.16.1'
     loaded_model = tf.saved_model.load(model_path)
     return loaded_model
 
